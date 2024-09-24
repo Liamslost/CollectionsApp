@@ -1,17 +1,14 @@
 <?php
 require_once 'DBconnect/DBconnect.php';
+require_once 'DBgetAllData/DBgetAllData.php';
 
 $db = DBconnect();
-$query = $db->prepare("SELECT `location`, `sublocation`, `attraction`,`info`, `photo`, `rating`  FROM `USA`");
-$result = $query->execute();
+$allTableData =DBgetAllData($db);
 
-if ($result) {
-    $all = $query->fetchall();
-}else{
-    echo 'Error';
-}
-require_once 'getInfo/getInfo.php';
+require_once 'DisplayLocations/DisplayLocations.php';
 
-echo getInfo($all);
+Echo DisplayLocations($allTableData);
+
+
 
 
