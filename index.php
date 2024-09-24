@@ -1,14 +1,25 @@
 <?php
-require_once 'DBconnect/DBconnect.php';
-require_once 'DBgetAllData/DBgetAllData.php';
+require_once 'src/DBconnect.php';
+require_once 'src/DBgetAllData.php';
+require_once 'src/DisplayLocations.php';
 
 $db = DBconnect();
-$allTableData =DBgetAllData($db);
+$allTableData = DBgetAllData($db);
 
-require_once 'DisplayLocations/DisplayLocations.php';
+?>
+<html lang="eng">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<title>Collections App</title>
 
-Echo DisplayLocations($allTableData);
+<body>
+<div class="cardcontainer">
+    <?php  echo displayLocations($allTableData);;
 
-
+    ?>
+</div>
+</body>
+</html>
 
 
