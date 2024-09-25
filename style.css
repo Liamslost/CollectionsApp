@@ -15,19 +15,16 @@
 
 body {
     background-color: rgb(255, 255, 255);
-
     margin: 0 auto;
     padding: 0;
 }
 
 .itemcard {
-    /*border: 3px solid deeppink;*/
     border-radius: 0.5rem;
     width: 200px;
-    height: 30rem;
+    height: 25rem;
     margin: 0 0.5rem;
     padding: 0;
-
     position: relative;
     display: flex;
     flex-direction: column;

@@ -15,4 +15,3 @@ function DisplayLocations(array $allLocations) : string
     }
     return $result;
 };
-//<img class='imagesizing' src='{$item['photo']}' alt='{$item['sublocation']}'>
