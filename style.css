@@ -23,7 +23,7 @@ body {
 .itemcard {
     /*border: 3px solid deeppink;*/
     border-radius: 0.5rem;
-    width: 22%;
+    width: 200px;
     height: 30rem;
     margin: 0 0.5rem;
     padding: 0;
@@ -37,11 +37,14 @@ body {
 
 .textcard {
     color: #525d60;
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
     border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.5rem;
     width: 100%;
-    padding: 0.5rem 0.25rem;
-    margin: 1rem;
+    padding: 0 0.5rem;
+    margin: 0.5rem;
 }
 
 .imagePlaceholder {
@@ -63,6 +66,7 @@ body {
 
 .imagetext {
     background-color: rgba(255, 255, 255, 0.59);
+    font-size: 75%;
     position: absolute;
     bottom: 0;
     right: 0.5rem;
