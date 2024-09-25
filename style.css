@@ -39,16 +39,12 @@ body {
     color: #525d60;
     border: 2px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.5rem;
-    height: ;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.25rem;
     margin: 1rem;
-
-
 }
 
 .imagePlaceholder {
-
     border-radius: 0.5rem;
     height: 75%;
     width: 100%;
@@ -66,12 +62,10 @@ body {
 }
 
 .imagetext {
-
     background-color: rgba(255, 255, 255, 0.59);
     position: absolute;
     bottom: 0;
     right: 0.5rem;
-
 }
 
 .cardContainer {
@@ -82,7 +76,6 @@ body {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-
 }
 
 .inputContainer{
@@ -90,7 +83,6 @@ body {
     padding: 2rem;
     display: flex;
     justify-content: center;
-
 }
 
 .inputField {

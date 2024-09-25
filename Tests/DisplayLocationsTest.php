@@ -10,9 +10,16 @@ class DisplayLocationsTest extends TestCase{
     $locations = [[
         'location'=>'Florida',
         'sublocation'=>'Tampa',
-        'attraction'=>'Ice Hockey']];
+        'attraction'=>'Ice Hockey',
+        'photo' => 'photo'
+    ]];
 
-    $expected = "<div class='card'><p>The location is Florida</p><p>The sub-location is Tampa</p><p>While I was there I went to Ice Hockey</p></div>";
+    $expected = "<div class='itemcard'>
+            <div class='imageplaceholder'><img class='imagesizing' src='photo' alt='Tampa'><p class='imagetext'>Tampa,Florida</p></div>
+            <div class='textcard'>
+            <p>Ice Hockey</p>
+            </div>
+            </div>";
     $actual = DisplayLocations($locations);
 
     $this->assertEquals($expected,$actual);
