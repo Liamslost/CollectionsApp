@@ -24,5 +24,14 @@ class DisplayLocationsTest extends TestCase{
 
     $this->assertEquals($expected,$actual);
 }
+public function testDisplaylocationstype ():void
+{
+    $this->expectException(TypeError::class);
+
+    DisplayLocations('This is not an array');
+
+
+}
+
 
 }
