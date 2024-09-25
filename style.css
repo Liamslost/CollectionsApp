@@ -1,14 +1,104 @@
-.card {
-    border: 2px solid black;
-    border-radius: 0.5rem;
-    height: 10rem;
-    width: 20rem;
-    padding: 0.5rem 1rem;
-    margin: 2rem;
-
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.cardcontainer {
+.heading{
+
+}
+.headingContainer {
+    border: 2px solid #ffffff;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+body {
+    background-color: rgb(255, 255, 255);
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+.itemcard {
+    /*border: 3px solid deeppink;*/
+    border-radius: 0.5rem;
+    width: 22%;
+    height: 30rem;
+    margin: 0 0.5rem;
+    padding: 0;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textcard {
+    color: #525d60;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    height: ;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+
+
+}
+
+.imagePlaceholder {
+
+    border-radius: 0.5rem;
+    height: 75%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    ;
+}
+
+.imagesizing{
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.imagetext {
+
+    background-color: rgba(255, 255, 255, 0.59);
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+
+}
+
+.cardContainer {
+    height: 80%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.inputContainer{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inputField {
+    border: 2px solid grey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 15rem;
+}
+
+
+

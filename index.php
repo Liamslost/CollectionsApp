@@ -8,17 +8,21 @@ $allTableData = DBgetAllData($db);
 
 ?>
 <html lang="eng">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
 <title>Collections App</title>
 
 <body>
-<div class="cardcontainer">
-    <?php  echo displayLocations($allTableData);;
+<nav></nav>
+    <div class="headingContainer">
+        <h1 class="heading">Whats in USA?</h1>
+    </div>
+    <div class="cardContainer">
+        <?php  echo displayLocations($allTableData)?>
+    </div>
 
-    ?>
-</div>
 </body>
 </html>
 

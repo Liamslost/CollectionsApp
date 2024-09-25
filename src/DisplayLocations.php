@@ -4,8 +4,15 @@ function DisplayLocations(array $allLocations) : string
 {
     $result = '';
     foreach ($allLocations as $item) {
-        $result .= "<div class='card'><p>The location is {$item['location']}</p><p>The sub-location is {$item['sublocation']}</p><p>While I was there I went to {$item['attraction']}</p></div>";
+        $result .=
+            "<div class='itemcard'>
+            <div class='imageplaceholder'><img class='imagesizing' src='{$item['photo']}' alt='{$item['sublocation']}'><p class='imagetext'>{$item['sublocation']},{$item['location']}</p></div>
+            <div class='textcard'>
+            <p>{$item['attraction']}</p>
+            </div>
+            </div>";
 
     }
     return $result;
 };
+//<img class='imagesizing' src='{$item['photo']}' alt='{$item['sublocation']}'>
