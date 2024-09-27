@@ -1,7 +1,7 @@
 <?php
 require_once 'src/dbConnect.php';
 require_once 'src/getAllData.php';
-require_once 'src/displayLocations.php';
+require_once 'src/DisplayLocations.php';
 require_once 'src/populateStateDropdown.php';
 require_once 'src/addToTable.php';
 
@@ -28,10 +28,8 @@ $allStatesData = getAllDataAllStates($db);
 <html lang="eng">
 <head>
     <link rel="stylesheet" href="style.css">
+    <title>Collections App</title>
 </head>
-
-<title>Collections App</title>
-<nav></nav>
 <body>
 <div class="headingContainer">
     <h1 class="heading">Whats in USA?</h1>
@@ -47,7 +45,7 @@ $allStatesData = getAllDataAllStates($db);
 </div>
 </div>
 <div class="cardContainer">
-    <?php  echo displayLocations($usaTableData);
+    <?php  echo DisplayLocations($usaTableData);
 
     ?>
 </div>

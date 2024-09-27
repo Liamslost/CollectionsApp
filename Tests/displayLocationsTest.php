@@ -1,5 +1,5 @@
 <?php
-require_once "src/displayLocations.php";
+require_once "src/DisplayLocations.php";
 use PHPUnit\Framework\TestCase;
 
 
@@ -24,7 +24,7 @@ class displayLocationsTest extends TestCase{
     $expected .="</div>";
     $expected .="</div>";
 
-    $actual = displayLocations($locations);
+    $actual = DisplayLocations($locations);
 
     $this->assertEquals($expected,$actual);
 }
@@ -32,7 +32,7 @@ public function testDisplaylocationstype_failure ():void
 {
     $this->expectException(TypeError::class);
 
-    displayLocations('This is not an array');
+    DisplayLocations('This is not an array');
 }
 
 public function testDisplaylocationsMalformedtest ():void
@@ -46,7 +46,7 @@ public function testDisplaylocationsMalformedtest ():void
 
     $this->expectException(InvalidArgumentException::class);
 
-    displayLocations($locations);
+    DisplayLocations($locations);
 
     }
 

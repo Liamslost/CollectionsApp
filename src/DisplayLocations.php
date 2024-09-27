@@ -1,6 +1,6 @@
 <?php
 
-function displayLocations(array $allLocations) : string
+function DisplayLocations(array $allLocations) : string
 {
     $result = '';
     foreach ($allLocations as $item) {

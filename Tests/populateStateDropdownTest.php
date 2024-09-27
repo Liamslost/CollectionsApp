@@ -34,7 +34,8 @@ class populateStateDropdownTest extends TestCase
             [
                 false => 'Florida',
                 '2' => 'Georgia',
-            ]];
+            ]
+        ];
 
         $this->expectException(InvalidArgumentException::class);
 
