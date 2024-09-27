@@ -6,7 +6,8 @@
 .heading{
     letter-spacing: 0.25rem;
     position: relative;
-    left: 7rem;
+    left: 8rem;
+    top: 1.5rem;
 }
 .headingContainer {
     border: 2px solid #ffffff;
@@ -15,11 +16,9 @@
     justify-content: flex-start;
 }
 
-.addentrybanner{
-    height:0rem;
-    width: 100%;
-    position:sticky;
-    top: 1rem;
+.section{
+    height: 4000px;
+    position: absolute;
 }
 
 .newEntryButton{
@@ -28,51 +27,40 @@
     background-color: transparent;
     box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
     height: 3rem;
-    position: relative;
-    top: 1rem;
-    left: 0.5em;
+    position: sticky;
+    top: 8.25rem;
+    left: 2rem;
     cursor: pointer;
+    z-index: 10;
 }
 
 .newEntryButton:hover{
     border-color: deeppink;
-    box-shadow: 0 0 deeppink;
-    top: 1.2rem;
-    left: 0.7rem;
-}
-
-.inputContainer{
-    width: 0;
-    padding: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0.1rem 0.1rem deeppink;
+    translate: 0 0.3rem;
 }
 
 .inputField {
     border: 2px solid rgba(128, 128, 128, 0.2);
+    background-color: rgba(255, 255, 255, 0.67);
     border-radius: 0.5rem;
-    display: flex;
-    flex-shrink: 2;
-    padding: 0rem;
-    width: 36rem;
+    height: 20rem;
+    width: 15rem;
     padding: 0.5rem;
-    position: relative;
-    top: 0.5rem;
-    left: 13rem;
+    position: absolute;
+    z-index: 10;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /*visibility: hidden;*/
+
 }
 
-.inputField label{
-    position: relative;
-    top: 0;
-}
-
-.inputField select {
-    height: 1rem;
+.entryformcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .addEntryButton{
@@ -89,9 +77,8 @@
 
 .addEntryButton:hover{
     border-color: deeppink;
-    box-shadow: 0 0 deeppink;
-    top: 0.2rem;
-    left: 0.7rem;
+    box-shadow: 0.1rem 0.1rem deeppink;
+    translate: 0 0.3rem;
 }
 
 body {
@@ -141,6 +128,15 @@ body {
     position: absolute;
 }
 
+.deleteButton {
+    color: rgba(255, 255, 255, 0.25);
+    position: relative;
+    top:0.5rem;
+    left: 0.5rem;
+    cursor: pointer;
+
+}
+
 .imagetext {
     background-color: rgba(255, 255, 255, 0.59);
     font-size: 75%;
@@ -155,7 +151,6 @@ body {
     background-color: #ffffff;
     padding: 0 10%;
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 
