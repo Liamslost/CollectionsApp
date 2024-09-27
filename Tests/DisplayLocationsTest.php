@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 
 
-class DisplayLocationsTest extends TestCase{
+class displayLocationsTest extends TestCase{
     public function testDisplaylocations_success():void
 {
     $locations = [[

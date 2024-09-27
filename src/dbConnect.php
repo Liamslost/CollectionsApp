@@ -1,6 +1,6 @@
 <?php
 
-function DBconnect()
+function dbConnect()
 {
     $db = new PDO(
         'mysql:host=DB;dbname=collections',   //DSN
