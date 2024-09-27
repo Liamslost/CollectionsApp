@@ -1,5 +1,5 @@
 <?php
-function addToTable ($db, $data)
+function addToTable($db, $data)
 {
     try {
         $location = $data['state'];
