@@ -3,7 +3,7 @@ require_once 'src/populateStateDropdown.php';
 
 use PHPUnit\Framework\TestCase;
 
-class populateStateDropdownTest extends TestCase
+class PopulateStateDropdownTest extends TestCase
 {
     public function testpopulateStateDropdownSuccess(): void
     {
