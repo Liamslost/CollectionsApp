@@ -39,8 +39,24 @@ $All_statesData = DBgetAllDataAll_States($db);
 <div class="headingContainer">
     <h1 class="heading">Whats in USA?</h1>
 </div>
-<section class="section">
-    <button class="newEntryButton">New Entry</button>
+<section>
+    <div class="section">
+        <label class="newEntryButton">New Entry
+        <input type="checkbox" class="checkbox">
+            <form method="post" class="inputField">
+                <label for="states"></label>
+                <select name="states" id="states" required>
+                    <?php echo populateStateDropdown($All_statesData)?>
+                </select>
+                <p></p>
+                <input type="text" name="sublocation" placeholder="Sublocation">
+                <p></p>
+                <input type="text" name="attraction" placeholder="Attraction">
+                <p></p>
+                <button class="addEntryButton">Add Entry</button>
+            </form>
+        </label>
+    </div>
 
     <div class="entryformcontainer">
         <form method="post" class="inputField">
@@ -59,12 +75,7 @@ $All_statesData = DBgetAllDataAll_States($db);
 <div>
 </div>
 <div class="cardContainer">
-
-
-
-    <?php  echo displayLocations($USATableData);
-
-    ?>
+    <?php  echo displayLocations($USATableData); ?>
 </div>
 <div class="inputContainer">
 </div>
