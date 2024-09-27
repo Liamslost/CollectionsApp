@@ -6,6 +6,7 @@ require_once 'src/populateStateDropdown.php';
 require_once 'src/addToTable.php';
 
 $db = DBconnect();
+deleteEntry($db);
 if (isset($_POST['states']) && isset($_POST['sublocation']) && isset($_POST['attraction'])) {
     $state = filter_var($_POST['states'], FILTER_VALIDATE_INT);
     if ($state === false) {
@@ -24,7 +25,6 @@ if (isset($_POST['states']) && isset($_POST['sublocation']) && isset($_POST['att
 }
 $USATableData = DBgetAllDataUSA($db);
 $All_statesData = DBgetAllDataAll_States($db);
-
 
 ?>
 <html lang="eng">

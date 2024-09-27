@@ -10,7 +10,10 @@ function DisplayLocations(array $allLocations) : string
         $result .="<div class='itemcard'>";
         $result .="<div class='imageplaceholder'>";
         $result .="<img class='imagesizing' src='{$item['photo']}' alt='{$item['sublocation']}'>";
-        $result .="<div class='deleteButton'><form method='post'><button type='submit'>X</button></form></div>";
+        $result .="<div class='deleteButton'><form method='POST'>";
+        $result .="<button type='submit'>X</button>";
+        $result .="<input type='text' name='id' id='id' value='{$item['id']}'>";
+        $result .="</form></div>";
         $result .="<p class='imagetext'>{$item['sublocation']},{$item['location']}</p>";
         $result .="</div>";
         $result .="<div class='textcard'>";
